@@ -1,3 +1,0 @@
-[submodule "llm-docs"]
-	path = llm-docs
-	url = git@github.com:witt3rd/llm-docs.git
