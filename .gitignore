@@ -288,5 +288,3 @@ __pycache__/
 *.odx.cs
 *.xsd.cs
 
-# Junction to shared llm-docs
-llm-docs

@@ -8,7 +8,9 @@ using OpenAI.Chat;
 public class Program
 {
     // Model to use
-    private const string MODEL_ID = "Phi-4-mini-reasoning-generic-gpu";
+    // private const string MODEL_ID = "Phi-4-mini-reasoning-generic-gpu";
+
+    private const string MODEL_ID = "Phi-4-mini-instruct-generic-gpu";
 
     // Whether to use native tool calling (set to true for this model)
     private const bool USE_NATIVE_TOOL_CALLING = true;
@@ -108,9 +110,16 @@ public class Program
         Console.WriteLine("  PSAgent                    - Start interactive REPL mode");
         Console.WriteLine("  PSAgent \"prompt\"           - Execute single prompt");
         Console.WriteLine("  PSAgent --help             - Show this help");
+        Console.WriteLine("\nOptions:");
+        Console.WriteLine(
+            "  --max-tokens <number>      - Set maximum output tokens (default: 8000)"
+        );
         Console.WriteLine("\nExamples:");
         Console.WriteLine("  PSAgent                              - Start REPL");
         Console.WriteLine("  PSAgent \"list running services\"      - Single command");
+        Console.WriteLine(
+            "  PSAgent --max-tokens 500 \"prompt\"    - Single command with token limit"
+        );
         Console.WriteLine($"\nModel: {MODEL_ID}");
         Console.WriteLine(
             $"Native tool calling: {(USE_NATIVE_TOOL_CALLING ? "Enabled" : "Disabled")}"
@@ -127,15 +136,39 @@ public class Program
         }
 
         string? singlePrompt = null;
+        int? maxTokens = 8000; // Default to 8000 tokens
 
-        // Simple argument parsing
-        if (args.Length == 1)
+        // Parse arguments
+        var argsList = new List<string>(args);
+        for (int i = 0; i < argsList.Count; i++)
         {
-            singlePrompt = args[0];
+            if (argsList[i] == "--max-tokens" && i + 1 < argsList.Count)
+            {
+                if (int.TryParse(argsList[i + 1], out int tokens) && tokens > 0)
+                {
+                    maxTokens = tokens;
+                    argsList.RemoveAt(i); // Remove --max-tokens
+                    argsList.RemoveAt(i); // Remove the value
+                    i--; // Adjust index
+                }
+                else
+                {
+                    Console.WriteLine(
+                        "Error: Invalid max-tokens value. Must be a positive integer."
+                    );
+                    return;
+                }
+            }
         }
-        else if (args.Length > 1)
+
+        // Process remaining arguments as prompt
+        if (argsList.Count == 1)
         {
-            singlePrompt = string.Join(" ", args);
+            singlePrompt = argsList[0];
+        }
+        else if (argsList.Count > 1)
+        {
+            singlePrompt = string.Join(" ", argsList);
         }
 
         try
@@ -163,6 +196,7 @@ public class Program
             Console.WriteLine(
                 $"Native tool calling: {(USE_NATIVE_TOOL_CALLING ? "Enabled" : "Disabled")}"
             );
+            Console.WriteLine($"Max output tokens: {maxTokens ?? 8000}");
 
             // Configure OpenAI client to use local endpoint
             var client = new OpenAIClient(
@@ -172,10 +206,11 @@ public class Program
 
             var chatClient = client.GetChatClient(modelInfo.ModelId);
 
-            // Create tool-enabled completion handler with native support flag
+            // Create tool-enabled completion handler with native support flag and max tokens
             var toolCompletionHandler = new ToolCallingCompletionHandler(
                 chatClient,
-                USE_NATIVE_TOOL_CALLING
+                USE_NATIVE_TOOL_CALLING,
+                maxTokens
             );
 
             // Register the PowerShell tool
@@ -291,13 +326,19 @@ public class ToolCallingCompletionHandler
     private readonly Dictionary<string, Func<Dictionary<string, object>, string>> _tools;
     private readonly List<ChatTool> _nativeTools;
     private readonly bool _useNativeToolCalling;
+    private readonly int? _maxTokens;
 
-    public ToolCallingCompletionHandler(ChatClient chatClient, bool useNativeToolCalling = false)
+    public ToolCallingCompletionHandler(
+        ChatClient chatClient,
+        bool useNativeToolCalling = false,
+        int? maxTokens = null
+    )
     {
         _chatClient = chatClient;
         _tools = new Dictionary<string, Func<Dictionary<string, object>, string>>();
         _nativeTools = new List<ChatTool>();
         _useNativeToolCalling = useNativeToolCalling;
+        _maxTokens = maxTokens;
 
         if (_useNativeToolCalling)
         {
@@ -395,6 +436,10 @@ public class ToolCallingCompletionHandler
     )
     {
         var options = new ChatCompletionOptions { Temperature = temperature, TopP = 0.9f };
+        if (_maxTokens.HasValue)
+        {
+            options.MaxOutputTokenCount = _maxTokens.Value;
+        }
 
         // Add tools to options
         foreach (var tool in _nativeTools)
@@ -507,6 +552,10 @@ public class ToolCallingCompletionHandler
         }
 
         var options = new ChatCompletionOptions { Temperature = temperature, TopP = 0.9f };
+        if (_maxTokens.HasValue)
+        {
+            options.MaxOutputTokenCount = _maxTokens.Value;
+        }
 
         // Get initial response
         var completion = await _chatClient.CompleteChatAsync(workingMessages, options);
