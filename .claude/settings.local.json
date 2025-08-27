@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(pwsh:*)"
+      "Bash(pwsh:*)",
+      "mcp__perplexity-ask__perplexity_ask"
     ],
     "deny": [],
     "ask": []
