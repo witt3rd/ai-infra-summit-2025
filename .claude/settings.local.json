@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(pwsh:*)",
-      "mcp__perplexity-ask__perplexity_ask"
+      "mcp__perplexity-ask__perplexity_ask",
+      "WebFetch(domain:github.com)",
+      "Bash(dotnet run:*)",
+      "Bash(dotnet new:*)",
+      "Bash(dotnet add package:*)"
     ],
     "deny": [],
     "ask": []
