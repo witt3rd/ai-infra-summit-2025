@@ -1,0 +1,581 @@
+WEBVTT
+Hey y'all, it's Dr. Knowit All. Today I
+want to talk about why slims and
+hierarchical reasoning are the future.
+I'll start with a little credit to Dr.
+Scott Walter who pointed me to this
+thread from Shrudy. And I read the
+thread. It's very interesting. I I think
+it might be a little bit overhyping it
+at saying the AI industry made a $57
+billion mistake and no one's talking
+about it. But you know, you've got to
+lead with what'll get clicks and quickly
+this has gotten quite a few views with
+380,000 views. So she does a better job
+with titling than I do obviously. So
+anyway, we'll start with that. But we're
+going to move directly to the articles.
+I'm going to go over the articles just a
+little bit, but what I want to focus on
+is the sort of combination and the idea
+that we're actually moving from a period
+of exploration to a period of
+optimization. At least that's my
+contention in this video. And what I
+mean by this is when you're first trying
+to do something, when you're doing a
+research project and you don't know what
+the answer is, you don't even know if
+there is an answer, for example, what
+you do is you just throw everything at
+the wall. You just make it work. and if
+it works, you're satisfied with that.
+But the consequence of that methodology
+is that you're not optimized at all.
+You're just kind of throwing things at
+the wall. You're seeing what sticks and
+if it works, you're using it. But the
+things that work will often not be very
+efficient. In other words, it will cost
+a lot of resources to do whatever it is.
+Now, this isn't just for software. It
+can be for hardware and things. You
+know, you design a new type of airplane
+or something like that. Think about the
+Wright brothers. They made an airplane.
+They they created something that flew,
+but it was definitely not the most
+optimized design and it took years and
+you know decades to come up with a much
+more optimal design for an airplane and
+one that could go quickly and burn less
+fuel and all of that kind of stuff. So
+anyway, it's that kind of thing. It goes
+with software as well. You just try
+something and make it work first. And
+that's sort of where we are with large
+language models right now. We're just
+burning massive amounts of compute
+resources to make these models actually
+work. The cool part about what I'm
+seeing here, and a definite tiein to
+Tesla itself, is the idea of efficiency
+and optimization. Tesla has had to do
+this for years because they're trying to
+do realtime full self-driving on the
+road with limited compute resources. So,
+they have been forced into optimizing
+what they're trying to do at a very very
+aggressive pace. But when you compare
+that to the large language model or AI
+industry overall, they have massive
+resources and so people are willing to
+throw a lot of compute resources at
+something just to make it work. And
+that's fine. Again, we're at an early
+stage of this. But what I'm seeing here
+is the first sort of steps towards
+optimizing towards making something work
+much more efficiently than it does right
+now. And I have an idea of what the
+future's going to look like. But first,
+let's take a look at these two articles.
+This one is from the 2nd of June of 2025
+and it's really a position paper from
+Nvidia. In other words, it doesn't have
+a lot of proof. It's more thinking about
+things. The title is small language
+models are the future of Agentic AI. And
+of course, large language models are
+LLMs and these are SLMs. And I'm just
+calling them slims because I think it
+sounds better. It's easier to say than
+SLM and it actually makes sense. You
+know, they're small, they're slim. So
+anyway, I'm going to call it that and
+we'll see if that catches. And if people
+use that terminology, I would I would
+like that. I think that's actually a
+good way to refer to this and it's much
+easier and acronyms. People like easy to
+remember acronyms so I think that has
+some advantages. Anyway, large language
+models or LLMs are often praised for
+exhibiting near human performance on a
+wide range of tasks and valued for their
+ability to hold a general conversation.
+Very true. The rise of agentic AI
+systems is however ushering in a mass of
+applications in which language models
+perform a small number of specialized
+tasks repetitively and with little
+variation. And very quickly, if you
+don't know, agents are different than
+sort of chat bots because they're able
+to go off and do multiple steps on their
+own. They don't require human
+interaction at every step. That's kind
+of the basic definition of what an agent
+is at this point. But of course, as
+opposed to chat bots, agents really,
+really up the token cost. In other
+words, the thinking cost because they
+have to think, they have to do
+something, they have to think somewhere,
+they have to do something. So there can
+be a lot of tokens generated, a lot of
+compute resources burned to do a single
+task that a human assigns this agent to.
+So with that definition in mind, we'll
+continue reading this. Here we lay out
+the position that small language models
+or slims are sufficiently powerful,
+inherently more suitable, and
+necessarily more economical for many
+invocations in agentic systems and are
+therefore the future of agentic AI. Now
+I have a twist on this. We'll get to
+that at the end of this video. But I
+don't think that these alone are the
+future of agentic AI. But anyway, hold
+that thought. Our argumentation is
+grounded in the current level of
+capabilities exhibited by slims, the
+common architectures of agentic systems,
+and the economy of large language model
+deployment. We further argue that in
+situations where generalpurpose
+conversational abilities are essential,
+heterogeneous agentic systems, i.e.
+agents invoking multiple different
+models are the natural choice. We
+discuss the potential barriers for the
+adoption of slims in agentic systems and
+outline a general large language model
+to slim agent conversion algorithm. Our
+position formulated as a value statement
+highlights the significance of the
+operational and economic impact even a
+partial shift from LLMs to slims is to
+have on the AI agent industry. So in
+other words, operational is like how you
+do things, right? It's operations of
+things and economic is how much does it
+cost. So if you're burning fewer compute
+resources, there is a major economic
+gain to be had. So you've got kind of a
+double whammy or a double plus thing,
+right? Double plus ungood, double plus
+good. Anyway, we aim to simulate the
+discussion on the effective use of AI
+resources and hope to advance the
+efforts to lower the costs of AI of the
+present day. Calling for both
+contributions to and critique of our
+position, we commit to publishing all
+such correspondence at this URL. So
+again, this is a position paper. They
+don't have proof of this. It's just a
+theory, an idea of where things are
+going. And just one more thing to touch
+on on this article. And of course, I
+will leave links to the originals in the
+description so you can read them at to
+your heart's content. Anyway, working
+definition one, a slim is a language
+model that can fit into a common
+consumer electronic device and perform
+inference with latency sufficiently low
+to be practical when serving the agentic
+requests of one user. So, in other
+words, it might fit on your phone or
+your laptop or your automobile or
+something like that. and it operates
+locally on the edge and it's good enough
+to work for what a single user wants.
+And then working definition two is a
+large language model is a language model
+that is not a slim. So that's pretty
+straightforward. And then we get to the
+contention that there are three major
+benefits to these slims. Number one,
+they're principally sufficiently
+powerful to handle language modeling
+errands of agentic applications. So not
+everything, but at least language
+modeling stuff. Two, they're inherently
+more operationally suitable for use in
+an agentic system than our large
+language models. Generally, in the sense
+that they're more efficient, they use
+less compute, and they're faster. And
+then three, kind of a consequence of
+these other steps is they are
+necessarily more economical for the vast
+majority of language model uses in
+agentic systems than their
+generalpurpose large language model
+counterparts by virtue of their smaller
+size. And then finally they conclude on
+the basis of views v1 through v3 slims
+are the future of agentic AI. So with
+that paper from Nvidia in mind let's
+take a look at this paper from sapient
+intelligence. Again I'm mostly going to
+focus on the abstract here. Hierarchical
+reasoning model reasoning the process of
+devising and executing complex goal
+oriented action sequences remains a
+critical challenge in artificial
+intelligence. Current large language
+models or LLMs primarily employ chain of
+thought techniques which suffer from
+brittle task decomposition, extensive
+data requirements, that's a biggie and
+that relates back to the efficiency
+argument and high latency. In other
+words, they're very very slow. Inspired
+by the hierarchical and multi-time scale
+processing in the human brain, so our
+brains are pretty cool. inspiration, we
+proposed the hierarchical reasoning
+model or HRM, a novel recurrent
+architecture that attains significant
+computational depth while maintaining
+both training stability and efficiency.
+So in other words, it can dive deep
+basically instead of being very very
+broad and general, it can go very very
+deep into a task. That's the sort of
+twist on large language models. HRM
+executes sequential reasoning tasks in a
+single forward pass. So that's really
+cool. doesn't have to go back and forth
+without explicit supervision of the
+intermediate process through two
+interdependent recurrent modules. So in
+other words, there's two things that
+sort of talk to each other. A highle
+module responsible for slow abstract
+planning. So that's the sort of higher
+level reasoning model and a low-level
+module handling rapid detailed
+computations. So this would be the
+difference between you as a human
+thinking about a math equation or
+something and walking into the kitchen
+and filling up a glass of water. you
+don't have to think about that very
+much. That that requires a different
+type of computation. And you can start
+to see here where this would actually
+have an effect on real world robotics
+immediately. You have the sort of
+abstracted reasoning layer and then you
+have the much more efficient, faster
+computation layer that sort of does the
+stuff you need to do based on what
+you're thinking about. And here's the
+real kicker with this. With only 27
+million parameters, which is absolutely
+tiny. I mean, we're looking at models
+that have over a trillion parameters.
+Now, HRM achieves exceptional
+performance on complex reasoning tasks
+using only 1,000 training samples. So,
+again, the data is small and the the the
+model itself is absolutely tiny. The
+model operates without pre-training or
+train of thought data, yet achieves
+nearly perfect performance on
+challenging tasks, including complex
+Sudoku puzzles and optimal pathf finding
+in large mazes. Furthermore, HRM
+outperforms much larger models with
+significantly longer context windows on
+the abstraction and reasoning corpus or
+ARC challenge, a key benchmark for
+measuring artificial general
+intelligence capabilities. These results
+underscore HRM's potential as a
+transformative advancement towards
+universal computation and generalpurpose
+reasoning systems. And then you can see
+the inspiration as you've got meta
+representation or higher level reasoning
+and then low-level representation. This
+is biologically inspired. And you can
+see how the two of them communicate with
+each other. And of course, the blue
+shows how well HRM actually does. Now,
+of course, these are not all of the
+Frontier models. There are some that are
+significantly smarter. So, I don't think
+HRM would do as well as them, but still,
+this is reasonable because something
+like 03 Mini High is still orders of
+magnitude larger in terms of the number
+of parameters it has than HRM. So,
+that's a pretty reasonable comparison.
+And then, very quickly, I'll touch on
+this graph right here where you can see
+that other models basically saturate.
+they can't get any better. They get to a
+certain point of accuracy, like about 65
+70% something like that, and they just
+can't get any more accurate. But then
+when you throw in hierarchical
+reasoning, it actually just like kicks
+in and gets to basically 100% on this
+Sudoku challenge. And that really comes
+from bifurcating the reasoning into
+smart thinking about things or slower
+reasoning and then fast computational
+tools to actually do the work. So again,
+I will leave a link to both of these
+papers in the description so you can
+read them at more length. And if you
+want me to go into more detail about the
+HRM paper, which is reasonably complex,
+you know, you have to think about it for
+a while, I would be happy to do that.
+Just let me know in the comments. But
+what I want to do here is kind of
+synthesize the ideas behind these two
+papers and come up with my theory for
+the future. Basically, what you've got
+here is the beginnings of optimization.
+You've got these large language models
+that are amazing and they can do amazing
+things, but they are incredibly
+inefficient, but they're also really,
+really smart. So, if you need those
+real, real high-end smarts, that's
+exactly what you're going to go for. But
+most tasks only require minimal smarts.
+They only require something to be able
+to operate well enough. And in that
+instance, it's overkill to be using
+these gigantic models on that. You want
+a smaller, more computationally and
+economically efficient model to be able
+to do those jobs. And that's where I
+believe we're actually heading for a
+combination here. We're looking at a
+hybrid system between these slims and
+large language models. And that might be
+a top- down model in some instances or
+it might be a sequential model. So a
+top- down model would be large language
+model thinks about something and then
+assigns a bunch of slims as agents to
+actually do the task. So if I asked it
+to solve one of those math olympiad
+problems or something, the large
+language model would look at the problem
+and figure out what it's asking, right?
+And then it would say like, oh, I've got
+all these really small little agents
+that can go and run around and do the
+individual tasks I need. and then they
+can give me their outputs and I can
+combine them back together, check
+whether it's right or wrong again or
+something like that and then produce an
+answer. So that's a top- down
+methodology. Another methodology which
+would probably be used in more instances
+than that is a sequential one which is
+where you start with a slim. So, in
+other words, you might be talking to
+your phone or your Tesla might be
+driving on the road or something and
+it's actually operating at very very
+high speed with a low parameter model
+that's focused on being efficient for
+power, for computation, and super low
+latency. And then if the requests
+actually exceed what these slims can do,
+they pass it up to a large language
+model, a big reasoning model, usually
+probably in the cloud, someplace far
+away at a big data center or something,
+and that can think about something for a
+few seconds, and then can return an
+answer back to these or other Slims that
+can go on and actually execute the task
+in the real world to take care of
+whatever it needs to take care of. And
+you could see how this can function in
+real world robotics. So, we'll take a
+Tesla Optimus for example. Let's say
+it's working in a factory. It's using
+the onboard Slims. It's just using what
+it's got internally to actually do a
+task. It's putting wheels on cars or
+something, right? That's what it's doing
+all day. So, that's a pretty basic
+thing. And once it's got that training,
+it can just do that over and over again.
+But then all of a sudden, the factory
+catches on fire and a bunch of smoke
+alarms and things like that go off. And
+at that point, it's far beyond the
+capability of the Slim. It doesn't know
+what the heck it's doing. And so what it
+could do is pass that new data, new
+information off to a large language
+model to think for a few seconds, right?
+It could think for five or 10 seconds
+about what needs to happen. It's the
+kind of thing where if this happened to
+a human being, you know, you're just
+working, working, working, and all of a
+sudden the circumstances change. There's
+smoke, there's fire alarms going off,
+you're like, "Oh, I need to think about
+this for a second." You go tick, tick,
+tick, tick, tick, right? Your higher
+order reasoning comes in and says,
+"Well, what's the best thing to do right
+now?" Well, probably either run away or
+put out the fire, right? go get some
+water and put out the fire. One of those
+two options happens. That's the kind of
+thing that a reasoning model at a
+distance could do and then send back
+information and then that overrides the
+original programming. And what it could
+do is invoke some new slims that are on
+board, which are well, let's walk or
+let's run or something. Let's use those
+mechanisms, that type of computation to
+either go get some water and help fight
+the fire, which is something the large
+language model could pass back, or if it
+looks like it's out of control and
+there's nothing you can do about it to
+at least save yourself to get out of the
+factory and to leave so that you're
+reducing the capex loss on the fire. And
+that same sort of thing could happen in
+a full self-driving scenario. In other
+words, you could be driving down the
+road and maybe a tornado or something
+like that happens, right? And there's
+other cars up front that are like, "Hey,
+there's a tornado." So there's
+information that gets passed to the
+vehicle, but what would happen is that's
+beyond what the basic full self-driving
+is able to handle. What it could do is
+then pass that off to a model like
+Grock. And if you haven't seen my chat
+about Grock and the future of Grock in
+Teslas, definitely check it out up here.
+I'll leave that at the end of the video
+as well. But basically, if it hits
+something like that, if it hits like
+there's a tornado up ahead on your
+route, that's something very out of the
+ordinary, very edge case. It would pass
+that up to Grock. Grock would think
+about that and then pass back a
+recommended course of action, a
+rerouting, a something or other to get
+the car out of a bad situation. And
+that's that sort of hybrid model I'm
+talking about. So again, one is more top
+down. You ask a very, very complicated
+question. And the large language model
+acts as an orchestrator, like a
+conductor of the orchestra, and it
+passes off tasks very much like a
+mixture of experts sort of situation.
+But here you've got these experts are
+very, very small, very, very focused and
+very, very fast agents that are slims.
+And then the other model, as I was
+talking about, is sequential. You're
+always going to the slim first, but if
+it realizes that it can't handle the
+situation, it then passes it off, right?
+It's like it's a tag team thing in
+wrestling or whatever. It's like you tag
+the other guy and the reasoning model
+can come in and it can think about it
+for longer and it doesn't matter if it
+takes a few seconds because this is not
+something that's like don't crash right
+now, right? That's still being handled
+by the slim while the other things are
+being thought about. And then when there
+is a response, when the large language
+model has some information, it passes it
+back down to the slims which are then
+reassigned to do whatever task they need
+to do. So what I'm seeing for the future
+here is a hybridized system of these
+slims and large language models each
+handling tasks that are better suited
+for what they need to do. Is this going
+to get us closer to artificial super
+intelligence? It might. It's going to be
+kind of a different methodology than
+humans. We are all sort of individuated,
+right? We're just in single entities.
+But of course we can operate in a
+corporate sense in the sense of like
+working for a company or something like
+that which is able to produce much more
+than an individual is. And so if we
+think about these things, these
+collections as sort of corporate or
+societal or something, that's where we
+might be able to get to artificial super
+intelligence because we've got a kind of
+hive mind with some very very
+intelligent large language models that
+are sitting on top and thinking about
+things in a more general sense and then
+potentially millions of these slims that
+are running on edge devices that are
+running really really fast that can
+actually take care of the operational
+needs of what the large language models
+are thinking about. So, is this
+combination of hierarchical thinking and
+small language models plus large
+language models the secret to getting
+from where we are today? Is this the
+architectural breakthrough that needs to
+happen to get to artificial super
+intelligence? You know, I don't know,
+but it seems like it's one of those
+things that could actually lead to that
+because it would allow compute resources
+to be utilized much more efficiently
+than they are today. And that would
+allow intelligence to grow exponentially
+because you would have the same amount
+of compute, but you would be using it,
+let's say, 10x or 100x more effectively.
+That can make the intelligence grow by
+10x or 100x. And that can get us well
+past the smartest human being to the
+sort of corporate level of multiple
+humans operating together, the
+equivalent of that. And that gets us to
+artificial super intelligence. All
+right, folks. So, that's my position
+paper or my position video here. What do
+you think about all of this? Let me know
+in the comments. While you're down
+there, if you don't mind liking the
+video, it really, really helps because
+YouTube algorithm depends on that. And
+if you want more of this kind of
+content, please consider subscribing for
+more of this. And I will see you in the
+[Music]
