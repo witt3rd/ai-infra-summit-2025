@@ -1,0 +1,17 @@
+---
+config:
+  theme: mc
+---
+graph LR
+    subgraph HC["High Orchestration"]
+        O1[Orchestrator]
+        O1 --> A1[Agent A]
+        O1 --> A2[Agent B]
+        O1 --> A3[Agent C]
+    end
+
+    subgraph LC["Low Orchestration"]
+        B1[Agent 1] <--> B2[Agent 2]
+        B2 <--> B3[Agent 3]
+        B1 <--> B3
+    end

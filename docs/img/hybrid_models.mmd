@@ -1,0 +1,13 @@
+
+---
+config:
+  theme: mc
+---
+graph TB
+    LLM[Large LM<br/>Orchestrator]
+    LLM --> S1[SLM 1<br/>Search]
+    LLM --> S2[SLM 2<br/>Extract]
+    LLM --> S3[SLM 3<br/>Format]
+    S1 -.-> LLM
+    S2 -.-> LLM
+    S3 -.-> LLM

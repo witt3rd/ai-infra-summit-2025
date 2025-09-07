@@ -1,0 +1,10 @@
+---
+config:
+  theme: mc
+---
+graph LR
+    C[Clarification<br/>Service] -->|async| MB{Message<br/>Bus}
+    S[Search<br/>Service] -->|async| MB
+    W[Web<br/>Service] -->|async| MB
+    MB -->|events| O[Orchestrator<br/>Service]
+    O -->|commands| MB

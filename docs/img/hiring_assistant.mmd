@@ -1,0 +1,13 @@
+---
+config:
+  theme: mc
+---
+graph TD
+    S[Supervisor Agent] --> SA[Sourcing Agent]
+    S --> EA[Evaluation Agent]
+    S --> CA[Communication Agent]
+    S --> MA[Memory Agent]
+    SA --> M[LinkedIn Messaging Infrastructure]
+    EA --> M
+    CA --> M
+    MA --> M

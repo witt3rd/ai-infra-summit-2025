@@ -1,0 +1,12 @@
+---
+config:
+  theme: mc
+---
+graph TD
+    subgraph "Resilience Layers"
+        M[Message Level<br/>Auto retry, queuing]
+        A[Agent Level<br/>Independent failures]
+        S[System Level<br/>Circuit breakers]
+    end
+    M --> A
+    A --> S

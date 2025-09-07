@@ -1,0 +1,10 @@
+---
+config:
+  theme: mc
+---
+graph LR
+    U[User Query] --> C[Clarification Agent]
+    C --> S[Sequential Search Agent]
+    C --> W[Web Search Agent]
+    S --> R[Results]
+    W --> R

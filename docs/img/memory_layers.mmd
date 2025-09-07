@@ -1,0 +1,14 @@
+---
+config:
+  theme: mc
+---
+graph LR
+    subgraph "Memory Layers"
+        W[Working Memory<br/>Context Windows]
+        L[Long-Term Memory<br/>Persistent Storage]
+        C[Collective Memory<br/>Shared Learning]
+    end
+    W --> L
+    L --> C
+    W <-- Retrieval --> L
+    L <-- Learning --> C
